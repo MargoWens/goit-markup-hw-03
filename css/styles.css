@@ -1,0 +1,298 @@
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/raleway-v18-latin_cyrillic-regular.eot");
+  src: local(""),
+    url("../fonts/raleway-v18-latin_cyrillic-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/raleway-v18-latin_cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/raleway-v18-latin_cyrillic-regular.woff") format("woff"),
+    url("../fonts/raleway-v18-latin_cyrillic-regular.ttf") format("truetype"),
+    url("../fonts/raleway-v18-latin_cyrillic-regular.svg#Raleway") format("svg");
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/raleway-v18-latin_cyrillic-700.eot");
+  src: local(""),
+    url("../fonts/raleway-v18-latin_cyrillic-700.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/raleway-v18-latin_cyrillic/raleway-v18-latin_cyrillic-700.woff2")
+      format("woff2"),
+    url("../fonts/raleway-v18-latin_cyrillic/raleway-v18-latin_cyrillic-700.woff")
+      format("woff"),
+    url("../fonts/raleway-v18-latin_cyrillic/raleway-v18-latin_cyrillic-700.ttf")
+      format("truetype"),
+    url("../fonts/raleway-v18-latin_cyrillic/raleway-v18-latin_cyrillic-700.svg")
+      format("svg");
+}
+
+/* цвет основного текста #757575 
+цвет заголовков #212121 
+акцентный цвет #2196F3 
+белый #FFFFFF 
+прозрачный для контактов футер rgba(255, 255, 255, 0.6) 
+фон героя и футера #2F303A 
+фон о компании #E5E5E5 
+фон наша команда #F5F4FA
+*/
+
+:root {
+  --text-cl: #757575;
+  --accent-cl: #2196f3;
+  --black: #212121;
+  --white: #ffffff;
+  --gray: rgba(255, 255, 255, 0.6);
+  --dark-bg: #2f303a;
+  --white-bg: #e5e5e5;
+  --grey-bg: #f5f4fa;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--text-cl);
+}
+
+/* Логотип */
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.192;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.logo-cl {
+  color: var(--accent-cl);
+}
+
+/* Белый лого на темном фоне */
+
+.logo-white {
+  color: var(--white);
+}
+
+/* Убрали маркеры */
+
+.list {
+  list-style: none;
+}
+
+/* Cсылки в навигации */
+
+.link {
+  font-weight: 500;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  color: var(--black);
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+/* Активная страница */
+
+.current {
+  color: var(--accent-cl);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-cl);
+}
+
+/* Cсылки адрес в хедере */
+
+.link-top-address {
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  color: var(--text-cl);
+  text-decoration: none;
+}
+
+.link-top-address:hover,
+.link-top-address:focus {
+  color: var(--accent-cl);
+}
+
+/* Фон шапки */
+
+.header-bg {
+  background-color: var(--white);
+}
+
+/* СТИЛИ СТРАНИЦЫ INDEX.HTML */
+
+/* Герой */
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.363;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+/* Кнопка героя */
+
+.hero-link {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  background-color: var(--accent-cl);
+  text-decoration: none;
+}
+
+/* Фон героя */
+
+.hero-bg {
+  background-color: var(--dark-bg);
+}
+
+/* Заги секций */
+
+.section-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.166;
+  text-align: center;
+  color: var(--black);
+}
+
+/* Заги блока преимуществ */
+
+.feature-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+/* Фон о компании */
+
+.feature-bg {
+  background-color: var(--white-bg);
+}
+
+/* Команда*/
+
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  text-align: center;
+  color: var(--black);
+}
+
+.discription-text {
+  font-size: 16px;
+  line-height: 1.187;
+  text-align: center;
+}
+
+/* Фон команды */
+.team-bg {
+  background-color: var(--grey-bg);
+}
+
+/* СТИЛИ СТРАНИЦЫ ПОДВАЛА */
+
+.link-footer-address {
+  color: var(--white);
+  text-decoration: none;
+  font-style: normal;
+}
+
+.link-footer-address:hover,
+.link-footer-address:focus {
+  color: var(--accent-cl);
+}
+
+.link-footer-contacts {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-style: normal;
+}
+
+.link-footer-contacts:hover,
+.link-footer-contacts:focus {
+  color: var(--accent-cl);
+}
+
+/* Фон подвала */
+.footer-bg {
+  background-color: var(--dark-bg);
+}
+
+/* СТИЛИ ДЛЯ PORTFOLIO.HTML*/
+
+/* Кнопки */
+
+.btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--black);
+  background-color: var(--grey-bg);
+  border-radius: 4px;
+  border-color: var(--grey-bg);
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--white);
+  background-color: var(--accent-cl);
+  border-color: var(--accent-cl);
+  cursor: pointer;
+}
+
+/* Убираем стиль ссылок */
+
+.link-style {
+  text-decoration: none;
+}
+
+/* Заги карточек */
+
+.point-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--black);
+}
+
+/* Подпись раздела в карточке */
+
+.discription-text.point {
+  line-height: 1.875;
+  text-align: left;
+  color: var(--text-cl);
+}
+
+/* Фон маин-контента */
+
+.portfolio-bg {
+  background-color: var(--white);
+}
