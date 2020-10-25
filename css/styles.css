@@ -160,7 +160,6 @@ img {
 
 .contacts-flexbox {
   display: flex;
-  align-items: center;
 }
 
 .contacts-flexbox .item:not(:last-child) {
@@ -186,6 +185,8 @@ img {
 /* Фон шапки и геометрия*/
 
 .header-bg {
+  padding-top: 24px;
+  padding-bottom: 25px;
   background-color: var(--white);
 }
 
