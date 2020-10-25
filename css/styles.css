@@ -50,23 +50,23 @@
   --grey-bg: #f5f4fa;
 }
 
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 body {
-  margin: 0;
   font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--text-cl);
+}
+
+/* Геометрия всего контента на странице */
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
 }
 
 /* Логотип */
@@ -90,13 +90,15 @@ body {
   color: var(--white);
 }
 
-/* Убрали маркеры */
+/* Убрали маркеры и отступы у списков*/
 
 .list {
+  margin: 0px;
+  padding: 0px;
   list-style: none;
 }
 
-/* Cсылки в навигации */
+/* Шапка. Cсылки в навигации */
 
 .link {
   font-weight: 500;
@@ -118,7 +120,7 @@ body {
   color: var(--accent-cl);
 }
 
-/* Cсылки адрес в хедере */
+/* Шапка. Cсылки адрес */
 
 .link-top-address {
   font-weight: 500;
@@ -134,7 +136,7 @@ body {
   color: var(--accent-cl);
 }
 
-/* Фон шапки */
+/* Фон шапки и геометрия*/
 
 .header-bg {
   background-color: var(--white);
@@ -145,10 +147,11 @@ body {
 /* Герой */
 
 .hero-title {
+  margin: 0px;
+  margin-bottom: 40px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.363;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white);
@@ -157,26 +160,41 @@ body {
 /* Кнопка героя */
 
 .hero-link {
+  display: inline-block;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+
   font-weight: bold;
   font-size: 16px;
   line-height: 1.875;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--white);
   background-color: var(--accent-cl);
   text-decoration: none;
 }
 
-/* Фон героя */
+/* Фон героя и геометрия */
 
 .hero-bg {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--dark-bg);
+}
+
+/* Заг героя по центру */
+
+.title-center {
+  text-align: center;
 }
 
 /* Заги секций */
 
 .section-title {
+  margin: 0px;
+  margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.166;
@@ -187,6 +205,8 @@ body {
 /* Заги блока преимуществ */
 
 .feature-title {
+  margin: 0px;
+  margin-bottom: 10px;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.142;
@@ -194,15 +214,33 @@ body {
   color: var(--black);
 }
 
-/* Фон о компании */
+/* Геометрия абзацев блока преимуществ */
+
+.list p {
+  margin: 0px;
+}
+
+/* Фон о компании и геометрия */
 
 .feature-bg {
-  background-color: var(--white-bg);
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--white);
+}
+
+/* Галерея. Геометрия */
+
+.gallery-bg {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--white);
 }
 
 /* Команда*/
 
 .team-title {
+  margin: 0px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.187;
@@ -218,6 +256,8 @@ body {
 
 /* Фон команды */
 .team-bg {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--grey-bg);
 }
 
@@ -247,6 +287,8 @@ body {
 
 /* Фон подвала */
 .footer-bg {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--dark-bg);
 }
 
