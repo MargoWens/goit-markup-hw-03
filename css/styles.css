@@ -86,7 +86,6 @@ img {
 .nav-flexbox {
   display: flex;
   align-items: center;
-  margin-right: auto;
 }
 
 .header-bg .logo {
@@ -116,7 +115,7 @@ img {
 
 .header-flexbox {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -154,8 +153,9 @@ img {
 /* Шапка. Геометрия контактов */
 
 .address-flexbox {
-  display: flexbox;
+  display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .contacts-flexbox {
