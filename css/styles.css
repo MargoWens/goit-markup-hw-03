@@ -50,6 +50,16 @@
   --grey-bg: #f5f4fa;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
