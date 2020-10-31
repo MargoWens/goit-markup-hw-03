@@ -414,9 +414,28 @@ img {
 
 /* СТИЛИ ДЛЯ PORTFOLIO.HTML*/
 
+/* Фон маин-контента и геометрия */
+
+.portfolio-bg {
+  background-color: var(--white);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.filter-list-flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-list-flexbox .item:not(:last-child) {
+  margin-right: 8px;
+}
+
 /* Кнопки */
 
 .btn {
+  padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -426,10 +445,10 @@ img {
   letter-spacing: 0.06em;
   color: var(--black);
   background-color: var(--grey-bg);
+  border: none;
   border-radius: 4px;
-  border-color: var(--grey-bg);
   text-decoration: none;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 
 .btn:hover,
@@ -462,10 +481,4 @@ img {
   line-height: 1.875;
   text-align: left;
   color: var(--text-cl);
-}
-
-/* Фон маин-контента */
-
-.portfolio-bg {
-  background-color: var(--white);
 }
