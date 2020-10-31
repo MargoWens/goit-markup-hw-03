@@ -50,6 +50,15 @@
   --grey-bg: #f5f4fa;
 }
 
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
@@ -60,6 +69,8 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Геометрия всего контента на странице */
@@ -193,9 +204,14 @@ img {
 
 /* Герой */
 
+.hero-container {
+  margin: auto;
+  max-width: 630px;
+}
+
 .hero-title {
   margin: 0px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.363;
@@ -267,6 +283,19 @@ img {
   margin: 0px;
 }
 
+/* О компании */
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 /* Фон о компании и геометрия */
 
 .feature-bg {
@@ -275,7 +304,25 @@ img {
   background-color: var(--white);
 }
 
+.feature-flexbox {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.feature-flexbox .item {
+  width: 270px;
+}
+
+.feature-flexbox .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* Галерея. Геометрия */
+
+.gallery-list-flex {
+  display: flex;
+  justify-content: space-between;
+}
 
 .gallery-bg {
   padding-top: 94px;
@@ -285,8 +332,31 @@ img {
 
 /* Команда*/
 
+/* Фон команды и геометрия */
+.team-bg {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--grey-bg);
+}
+
+.team-list-flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.team-list-flex .item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+/* Команда. Стили */
+
 .team-title {
   margin: 0px;
+  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -301,14 +371,24 @@ img {
   text-align: center;
 }
 
-/* Фон команды */
-.team-bg {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  background-color: var(--grey-bg);
+/* Фон подвала и геометрия */
+.footer-bg {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--dark-bg);
 }
 
-/* СТИЛИ СТРАНИЦЫ ПОДВАЛА */
+.footer-flexbox-logo {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.footer-list-contact .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+/* Стили подвала */
 
 .link-footer-address {
   color: var(--white);
@@ -330,13 +410,6 @@ img {
 .link-footer-contacts:hover,
 .link-footer-contacts:focus {
   color: var(--accent-cl);
-}
-
-/* Фон подвала */
-.footer-bg {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: var(--dark-bg);
 }
 
 /* СТИЛИ ДЛЯ PORTFOLIO.HTML*/
