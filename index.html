@@ -17,8 +17,8 @@
   </head>
   <body>
     <!-- Шапка сайта -->
-    <header class="header-bg">
-      <div class="container header-flexbox">
+    <header>
+      <div class="container header-flexbox header-bg">
         <nav class="nav-flexbox">
           <a class="logo" href="./index.html" lang="en">
             <span class="logo-cl">Web</span>Studio</a
@@ -52,17 +52,15 @@
     <!-- Основной контент страницы-->
     <main>
       <!--Герой-->
-      <section class="hero-bg title-center">
-        <div class="container">
-          <div class="hero-container">
-            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <a href="" class="hero-link">Заказать услугу</a>
-          </div>
+      <section class="container title-center hero-bg">
+        <div class="hero-container">
+          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <a href="" class="hero-link">Заказать услугу</a>
         </div>
       </section>
       <!--О компании-->
-      <section class="feature-bg">
-        <div class="container">
+      <section>
+        <div class="container feature-bg">
           <h2 class="visually-hidden">Особенности компании</h2>
           <ul class="list feature-flexbox">
             <li class="item">
@@ -97,8 +95,8 @@
         </div>
       </section>
       <!--Галерея-->
-      <section class="gallery-bg">
-        <div class="container">
+      <section>
+        <div class="container gallery-bg">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list gallery-list-flex">
             <li>
@@ -122,8 +120,8 @@
         </div>
       </section>
       <!--Команда-->
-      <section class="team-bg">
-        <div class="container">
+      <section>
+        <div class="container team-bg">
           <h2 class="section-title">Наша команда</h2>
           <ul class="list team-list-flex">
             <li class="item">
@@ -167,13 +165,15 @@
       </section>
     </main>
     <!--Подвал страницы-->
-    <footer class="footer-bg">
-      <div class="container">
-        <div class="footer-flexbox-logo">
-          <a href="./index.html" lang="en" class="logo logo-white">
-            <span class="logo-cl">Web</span>Studio</a
-          >
-        </div>
+    <footer>
+      <div class="container footer-bg">
+        <a
+          href="./index.html"
+          lang="en"
+          class="logo logo-white footer-flexbox-logo"
+        >
+          <span class="logo-cl">Web</span>Studio</a
+        >
         <address id="contact">
           <ul class="list footer-list-contact">
             <li class="item">
